@@ -1,0 +1,57 @@
+{
+  "name": "langchain-middleware-logging",
+  "module": "./dist/index.mjs",
+  "version": "1.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "LangChain middleware that logs model inputs/outputs with customizable formatting",
+  "license": "MIT",
+  "keywords": [
+    "langchain",
+    "middleware",
+    "logging",
+    "observability",
+    "ai-agents",
+    "monitoring"
+  ],
+  "author": "Eyuel G. Molla",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eyueldk/langchain-middleware-logging"
+  },
+  "bugs": {
+    "url": "https://github.com/eyueldk/langchain-middleware-logging/issues"
+  },
+  "homepage": "https://github.com/eyueldk/langchain-middleware-logging#readme",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "package.json"
+  ],
+  "scripts": {
+    "start": "bun playground/index.ts",
+    "build": "tsdown",
+    "prepublishOnly": "bun run build",
+    "check": "tsc --noEmit",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@langchain/google-genai": "^2.0.0",
+    "@types/bun": "latest",
+    "prettier": "^3.7.3",
+    "tsdown": "^0.17.0-beta.4"
+  },
+  "peerDependencies": {
+    "langchain": "*",
+    "typescript": "^5"
+  },
+  "type": "module",
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  }
+}
