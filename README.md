@@ -1,13 +1,13 @@
-# langchain-middleware-logging
+# langchainjs-logging
 
-LangChain middleware for capturing and formatting every message that flows through an agent. It keeps track of what has already been logged, truncates large payloads, and lets you plug in your own logger or formatter.
+LangChain library for capturing and formatting every message that flows through an agent. It keeps track of what has already been logged, truncates large payloads, and lets you plug in your own logger or formatter.
 
 ## Installation
 
 ```bash
-npm install langchain-middleware-logging langchain
+npm install langchainjs-logging langchain
 # or
-bun install langchain-middleware-logging langchain
+bun install langchainjs-logging langchain
 ```
 
 ## Usage
@@ -16,7 +16,7 @@ bun install langchain-middleware-logging langchain
 
 ```typescript
 import { createAgent } from "langchain";
-import { createLoggingMiddleware } from "langchain-middleware-logging";
+import { createLoggingMiddleware } from "langchainjs-logging";
 
 const model = someLangChainModel; // supply any LangChain-compatible model
 
@@ -52,7 +52,7 @@ const agent = createAgent({
 
 ### `createLoggingMiddleware(options?)`
 
-Wraps a LangChain model call and logs new messages before and after the model runs.
+Creates a logging component that wraps a LangChain model call and logs new messages before and after the model runs. This function returns a middleware-compatible object that can be used with LangChain's middleware system.
 
 #### Options
 

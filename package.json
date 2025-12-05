@@ -1,15 +1,14 @@
 {
-  "name": "langchain-middleware-logging",
+  "name": "langchainjs-logging",
   "module": "./dist/index.mjs",
   "version": "1.0.0",
   "publishConfig": {
     "access": "public"
   },
-  "description": "LangChain middleware that logs model inputs/outputs with customizable formatting",
+  "description": "LangChain library that logs model inputs/outputs with customizable formatting",
   "license": "MIT",
   "keywords": [
     "langchain",
-    "middleware",
     "logging",
     "observability",
     "ai-agents",
@@ -18,12 +17,12 @@
   "author": "Eyuel G. Molla",
   "repository": {
     "type": "git",
-    "url": "https://github.com/eyueldk/langchain-middleware-logging"
+    "url": "https://github.com/eyueldk/langchainjs-logging"
   },
   "bugs": {
-    "url": "https://github.com/eyueldk/langchain-middleware-logging/issues"
+    "url": "https://github.com/eyueldk/langchainjs-logging/issues"
   },
-  "homepage": "https://github.com/eyueldk/langchain-middleware-logging#readme",
+  "homepage": "https://github.com/eyueldk/langchainjs-logging#readme",
   "files": [
     "dist",
     "README.md",
