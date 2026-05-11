@@ -1,13 +1,13 @@
-# langchainjs-logging
+# langchain-logging
 
 LangChain library for capturing and formatting every message that flows through an agent. It keeps track of what has already been logged, truncates large payloads, and lets you plug in your own logger or formatter.
 
 ## Installation
 
 ```bash
-npm install langchainjs-logging langchain
+npm install langchain-logging langchain
 # or
-bun install langchainjs-logging langchain
+bun install langchain-logging langchain
 ```
 
 ## Usage
@@ -16,7 +16,7 @@ bun install langchainjs-logging langchain
 
 ```typescript
 import { createAgent } from "langchain";
-import { createLoggingMiddleware } from "langchainjs-logging";
+import { createLoggingMiddleware } from "langchain-logging";
 
 const model = someLangChainModel; // supply any LangChain-compatible model
 

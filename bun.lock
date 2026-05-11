@@ -1,5 +1,6 @@
 {
   "lockfileVersion": 1,
+  "configVersion": 0,
   "workspaces": {
     "": {
       "name": "langchain-middleware-logging",
@@ -10,7 +11,7 @@
         "tsdown": "^0.17.0-beta.4",
       },
       "peerDependencies": {
-        "langchain": "*",
+        "langchain": ">=1.0.0",
         "typescript": "^5",
       },
     },

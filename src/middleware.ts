@@ -73,13 +73,6 @@ function formatMessage(message: BaseMessage): string {
       }).join("\n");
     } else {
     }
-    return `[AI]\n${content}\n`;
-  } else if (message.type === "human") {
-    return `[HUMAN]\n${content}\n`;
-  } else if (message.type === "tool") {
-    return `[TOOL]\n${content}\n`;
-  } else {
-    // Fallback for other message types
-    return `[${message.type.toUpperCase()}]\n${content}\n`;
   }
+  return `[${message.type?.toUpperCase()}]\n${content}\n`;
 }

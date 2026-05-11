@@ -1,7 +1,7 @@
 {
-  "name": "langchainjs-logging",
+  "name": "langchain-logging",
   "module": "./dist/index.mjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publishConfig": {
     "access": "public"
   },
@@ -17,12 +17,12 @@
   "author": "Eyuel G. Molla",
   "repository": {
     "type": "git",
-    "url": "https://github.com/eyueldk/langchainjs-logging"
+    "url": "https://github.com/eyueldk/langchain-logging"
   },
   "bugs": {
-    "url": "https://github.com/eyueldk/langchainjs-logging/issues"
+    "url": "https://github.com/eyueldk/langchain-logging/issues"
   },
-  "homepage": "https://github.com/eyueldk/langchainjs-logging#readme",
+  "homepage": "https://github.com/eyueldk/langchain-logging#readme",
   "files": [
     "dist",
     "README.md",
@@ -43,7 +43,7 @@
     "tsdown": "^0.17.0-beta.4"
   },
   "peerDependencies": {
-    "langchain": "*",
+    "langchain": ">=1.0.0",
     "typescript": "^5"
   },
   "type": "module",
